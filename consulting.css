@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Martian+Mono:wght@500&family=Montserrat:ital,wght@0,500;1,400;1,500&family=Mulish:wght@300;400;500;600&family=Nanum+Myeongjo&family=Playfair+Display:ital,wght@1,600;1,700&family=Poppins:ital,wght@0,600;0,700;1,300;1,500&family=Raleway:wght@700&family=Roboto+Condensed:wght@700&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;1,500&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,600;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700&family=Roboto+Slab:wght@300;400&family=Roboto:ital,wght@0,100;1,100;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* 네비게이션  */
+nav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 10px;
+  border-radius: 8px;
+  /* background-color: rgb(228, 186, 67); */
+}
+
+.brand-name {
+  margin: 10px 15px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.brand-name a {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  padding-left: 30px;
+}
+
+.nav-list {
+  padding: 20px;
+}
+
+.nav-list a {
+  margin: 10px;
+  padding: 8px;
+  text-decoration: none;
+  color: #6c6c6c;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+.nav-list a:hover {
+  color: #fff;
+  background-color: rgb(236, 174, 1);
+}
+
+#login {
+  border: 2px solid;
+  padding: 7px 15px;
+  border-color: rgb(228, 186, 67);
+}
+
+#login:hover {
+  color: #fff;
+  background-color: rgb(236, 174, 1);
+}
+
+#membership {
+  background-color: rgb(242, 179, 5);
+  color: #fff;
+}
+
+#membership:hover {
+  background-color: rgb(244, 187, 30);
+}
+
+/* header */
+.header-container {
+  width: 115%;
+  position: relative;
+  bottom: 1.5px;
+}
+
+.header-container::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(166, 163, 163, 0.4);
+}
+
+.header-container img {
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+  vertical-align: middle;
+  border-radius: 3px;
+  border: 1px solid rgb(228, 186, 67);
+}
+
+.header-text h1 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 100;
+}
+
+.header-text h4 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+  top: 75%;
+  left: 17.2%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 100;
+}
+
+.valor-info {
+  border: 0.5px solid rgb(228, 186, 67);
+  border-radius: 2px;
+  background-color: rgb(228, 186, 67);
+  padding: 20px;
+  position: relative;
+  left: 0.5px;
+  bottom: 1px;
+}
+
+.valor-info p {
+  position: relative;
+  left: 6.7%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* main */
+
+.main-container{
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding-left: 13vw;
+  padding-right: 13vw;
+}
+
+.main-container h1{
+  margin-top: 0 auto;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.consulting-container{
+  margin-top: 50px;
+  margin-bottom: 165px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container{
+  border: 1px solid rgb(228, 186, 67);
+  border-radius: 5px;
+  width: 30%;
+  height: 400px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.container:hover{ 
+  border-color:  rgb(249, 183, 2);
+}
+
+.container h2{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.container p{
+  padding-left: 20px;
+}
+
+/* footer */
+.footer-container{
+  width: 110%;
+  height: 110%;
+}
+
+.footer-text{
+  background-color: rgb(228, 186, 67);
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 50px;
+}
+
+.footer-text p{
+  position: relative;
+  left: 10%;
+  bottom: 30px;
+  padding: 3px;
+}
+
+.instagram{
+  position: relative;
+  left: 10%;
+  padding-top: 5px;
+  bottom: 30px;
+}
+
+.instagram a{
+  text-decoration: none;
+  color: #000;
+  padding-left: 3px;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
